@@ -8,6 +8,7 @@
 
 #import "ZWNightModeViewController.h"
 
+#define kZWAlpha 0.6
 @interface ZWNightModeViewController ()
 
 @end
@@ -25,7 +26,7 @@
                                                                 maxSize,
                                                                 maxSize)];
     maskView.userInteractionEnabled = NO;
-    maskView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
+    maskView.backgroundColor = [UIColor colorWithWhite:0 alpha:kZWAlpha];
     [self.view addSubview:maskView];
 }
 
